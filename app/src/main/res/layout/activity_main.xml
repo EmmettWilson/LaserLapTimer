@@ -11,8 +11,95 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.github.emmettwilson.laserlaptimer.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/start_event"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="start a kilo"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="reset"/>
+
+    <TextView
+        android:id="@+id/countdown"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Countdown in progress"/>
+
+    <GridLayout
+        android:id="@+id/event_data"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lap 1: "/>
+
+        <TextView
+            android:id="@+id/lap_1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lap 2: "/>
+
+        <TextView
+            android:id="@+id/lap_2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lap 3: "/>
+
+        <TextView
+            android:id="@+id/lap_3_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lap 4:"/>
+
+        <TextView
+            android:id="@+id/lap_4_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: "/>
+
+        <TextView
+            android:id="@+id/total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+
+    </GridLayout>
+
+
 </RelativeLayout>
